@@ -8,6 +8,7 @@ path_file = 'Data/Rotten Tomatoes Movies.csv'
 df_movies = pd.read_csv(path_file)
 
 print(len(df_movies))
+print(df_movies.shape)
 
 df_categorias = df_movies['tomatometer_status'].value_counts()
 print(df_categorias)
